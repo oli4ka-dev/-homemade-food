@@ -7,9 +7,18 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
 a {
     display: inline-block;
     text-decoration: none;
+
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 html,
@@ -17,24 +26,39 @@ body {
     height: 100%;
     // position: relative;
     overflow-x: hidden;
+    // background-color: #ccc;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #555;
+
+}
+
 //прижать footer к низу 
-* {
+*,
+h1,
+h2,
+h3 {
     margin: 0;
     padding: 0;
 }
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-.content {
-    background-color: $grey;
-    flex: 1 0 auto;
-}
-.footer {
-    flex: 0 0 auto;
-}
+
+// .wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100%;
+// }
+// .content {
+//     background-color: $grey;
+//     flex: 1 0 auto;
+// }
+// .footer {
+//     flex: 0 0 auto;
+// }
 
 //   footer 
 .container {
