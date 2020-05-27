@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашняя еда</title>
+    <title>Всё меню</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -65,47 +65,17 @@
                                     Регистрация
                                 </a>
                             </div>
-                            <div class="header__btn-bg">
-                                <div class="header__btn-menu icon-user"></div>
-                            </div>
+                            <div class="header__btn-menu icon-user"></div>
                         </div>
                     </div>
                 </div>
                 <div class="header__menu">
                     <div class="container">
                         <nav class="menu">
-                            <div class="menu__btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <ul class="menu__list">
+                            <ul class="menu__list menu__list-all">
                                 <li>
-                                    <a href="#slide" class="scrollto">
-                                        Главная
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#menu" class="scrollto">
-                                        Меню
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#about" class="scrollto">
-                                        О нас
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#blog" class="scrollto">
-                                        Блог
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#contacts" class="scrollto">
-                                        Контакты
+                                    <a href="index.html">
+                                        На главную
                                     </a>
                                 </li>
                             </ul>
@@ -120,84 +90,32 @@
                                 </form>
                             </div>
                         </nav>
+
                     </div>
                 </div>
             </header>
-            <main>
-                <section class="slide" id="slide">
-                    <div class="slide__inner">
-                        <div class="slide__item" style="background-image: url(images/slide.jpg);">
-                            <div class="container">
-                                <div class="slide__wrapper">
-                                    <div class="slide__wrapper-content">
-                                        <h1 class="slide__title">
-                                            Вкусно, как дома
-                                        </h1>
-                                        <h2 class="slide__subtitle">
-                                            Качественный сервис для настоящих гурманов
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide__item" style="background-image: url(images/slide-1.jpg);">
-                            <div class="container">
-                                <div class="slide__wrapper">
-                                    <div class="slide__wrapper-content">
-                                        <h1 class="slide__title"> Вкусно, как дома</h1>
-                                        <h2 class="slide__subtitle">Качественный сервис для настоящих гурманов
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide__item" style="background-image: url(images/slide-4.jpg);">
-                            <div class="container">
-                                <div class="slide__wrapper">
-                                    <div class="slide__wrapper-content">
-                                        <h1 class="slide__title"> Вкусно, как дома</h1>
-                                        <h2 class="slide__subtitle">Качественный сервис для настоящих гурманов
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide__item" style="background-image: url(images/slide-3.jpg);">
-                            <div class="container">
-                                <div class="slide__wrapper">
-                                    <div class="slide__wrapper-content">
-                                        <h1 class="slide__title"> Вкусно, как дома</h1>
-                                        <h2 class="slide__subtitle">Качественный сервис для настоящих гурманов
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="products" id="menu">
+            <main>
+                <section class="products">
                     <div class="container">
-                        <div class="products__title" data-aos="fade-left">
-                            Меню
+                        <div class="products__wrapper">
+                            <div class="products__title-all">
+                                Меню
+                            </div>
+                            <div class="products__inner-text">
+                                Мы готовим вкусную еду и доставляет ее в офисы и квартиры вашего города. Наша еда
+                                подходит взрослым и детям, а ассортимент блюд в меню впечатляет разнообразием! Узнайте
+                                больше о нашей компании, взглядах на хорошее питание и принципах работы!
+                            </div>
                         </div>
                     </div>
                     <div class="container-fluid">
 
                         <div class="products__inner">
-                            <div class="menu__inner-btn">
-                                <button type="button" data-filter=".category-complex">Комплексные обеды</button>
-                                <button type="button" data-filter=".category-meat">Мясные блюда</button>
-                                <button type="button" data-filter=".category-salad">Салаты и закуски</button>
-                                <button type="button" data-filter=".category-garnish">Гарниры</button>
-                                <button type="button" data-filter=".category-soup">Супы</button>
-                                <button type="button" data-filter=".category-baking">Выпечка и десерты</button>
-                                <a class="menu__inner-link" href="all-menu.html">Всё меню</a>
-                            </div>
 
                             <div class="products__inner-box">
                                 <!-- Комплексные обеды -->
-                                <div class="product__item mix category-complex">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-32.jpg);"></div>
 
@@ -210,10 +128,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-complex">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-31.jpg);"></div>
 
@@ -226,10 +144,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-complex">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-30.jpg);"></div>
 
@@ -242,10 +160,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-complex">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-29.jpg);"></div>
 
@@ -258,12 +176,12 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
                                 <!-- Комплексные обеды -->
                                 <!-- Мясные блюда -->
-                                <div class="product__item mix category-meat">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-28.jpg);"></div>
 
@@ -276,10 +194,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-meat">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-27.jpg);"></div>
 
@@ -292,10 +210,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-meat">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-26.jpg);"></div>
 
@@ -308,10 +226,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-meat">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-25.jpg);"></div>
 
@@ -324,10 +242,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-meat">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-24.jpg);"></div>
 
@@ -340,10 +258,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-meat">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-23.jpg);"></div>
 
@@ -356,12 +274,12 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
                                 <!--Мясные блюда -->
                                 <!-- Салаты и закуски -->
-                                <div class="product__item mix category-salad">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-22.jpg);"></div>
 
@@ -374,10 +292,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-salad">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-21.jpg);"></div>
 
@@ -390,10 +308,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-salad">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-20.jpg);"></div>
 
@@ -406,10 +324,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-salad">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-19.jpg);"></div>
 
@@ -422,10 +340,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-salad">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-18.jpg);"></div>
 
@@ -438,10 +356,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-salad">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-17.jpg);"></div>
 
@@ -454,12 +372,12 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
                                 <!-- Салаты и закуски -->
                                 <!-- Гарниры -->
-                                <div class="product__item mix category-garnish">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-16.jpg);"></div>
 
@@ -472,10 +390,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-garnish">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-15.jpg);"></div>
 
@@ -488,10 +406,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-garnish">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-14.jpg);"></div>
 
@@ -504,10 +422,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-garnish">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-13.jpg);"></div>
 
@@ -520,10 +438,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-garnish">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-12.jpg);"></div>
 
@@ -536,10 +454,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-garnish">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-11.jpg);"></div>
 
@@ -552,16 +470,16 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
                                 <!-- Гарниры -->
                                 <!-- Супы -->
-                                <div class="product__item mix category-soup">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-10.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-10.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">
                                             Борщ украинский со сметаной
                                             <span>(Порция: 300 гр.)</span>
@@ -570,14 +488,14 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-soup">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-9.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-9.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">
                                             Грибной суп
                                             <span>(Порция: 300 гр.)</span>
@@ -586,14 +504,14 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-soup">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-8.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-8.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">
                                             Овощной суп
                                             <span>(Порция: 300 гр.)</span>
@@ -602,14 +520,14 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-soup">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-7.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-7.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">
                                             Суп куриный с лапшой
                                             <span>(Порция: 300 гр.)</span>
@@ -618,14 +536,14 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-soup">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-6.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-6.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">
                                             Борщ зеленый со сметаной
                                             <span>(Порция: 300 гр.)</span>
@@ -634,14 +552,14 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-soup">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-5.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-5.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">
                                             Суп с фрикадельками
                                             <span>(Порция: 300 гр.)</span>
@@ -650,16 +568,16 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
                                 <!-- Супы -->
                                 <!-- Выпечка и десерты -->
-                                <div class="product__item mix category-baking">
+                                <div class="product__item">
                                     <div class="product__item-img"
-                                        style="background-image: url(images/menu/menu-3.jpg);""></div>
+                                        style="background-image: url(images/menu/menu-3.jpg);"></div>
 
-                                <div class=" product__item-content">
+                                    <div class=" product__item-content">
                                         <div class="product__item-name">Роллини с яблоком
                                             <span>(Порция: 130 гр.)</span>
                                         </div>
@@ -667,10 +585,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-baking">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-2.jpg);"></div>
 
@@ -683,10 +601,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
-                                <div class="product__item mix category-baking">
+                                <div class="product__item">
                                     <div class="product__item-img"
                                         style="background-image: url(images/menu/menu-4.jpg);"></div>
 
@@ -699,229 +617,10 @@
                                     </div>
                                     <div class="product__item-info">
                                         <a class="product__item-cart" href="#">В корзину</a>
-                                        <a class="product__item-more" href="#">Описание</a>
+                                        <div class="product__item-more">Описание</div>
                                     </div>
                                 </div>
                                 <!-- Выпечка и десерты -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="advantages" id="about">
-                    <div class="container">
-                        <div class="advantages__title" data-aos="fade-left">
-                            Удобно и вкусно
-                        </div>
-                        <p class="advantages-text">
-                            Наша компания занимается производством и доставкой готовой еды в офисы и
-                            квартиры Одессы.
-                            Мы обеспечиваем ежедневное корпоративное питание для организаций и частных лиц более
-                            полутора лет.
-                        </p>
-                        <p class="advantages-text">
-                            Имея большой опыт работы и профессиональную команду, мы можем заявить: наша еда подходит
-                            взрослым и детям, а ассортимент блюд в меню впечатляет разнообразием!
-                            Наша миссия - обеспечить всех качественной, доступной и разнообразной готовой едой на каждый
-                            день.
-                        </p>
-                        <div class="advantages__inner">
-                            <div class="advantages__item">
-                                <div class="advantages__item-wrapper">
-                                    <div class="advantages__item-images lnr-smile"></div>
-                                    <p class="advantages__item-text">
-                                        Любите сладкое? Вам радость, вкуснейшие десерты)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-wrapper">
-                                    <div class="advantages__item-images lnr-thumbs-up"></div>
-                                    <p class="advantages__item-text">
-                                        Разнообразие блюд каждый день. Постоянное обновление блюд.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-wrapper">
-                                    <div class="advantages__item-images icon-truck"></div>
-                                    <p class="advantages__item-text">
-                                        Быстрая доставка в удобное время и место.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-wrapper">
-                                    <div class="advantages__item-images lnr-clock"></div>
-                                    <p class="advantages__item-text">
-                                        Готовить не надо. Профессионально приготовлено. Почувствуйте заботу!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-wrapper">
-                                    <div class="advantages__item-images lnr-dinner"></div>
-                                    <p class="advantages__item-text">
-                                        Домашняя еда, вкусные борщи и не только.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-wrapper">
-                                    <div class="advantages__item-images lnr-sun"></div>
-                                    <p class="advantages__item-text">
-                                        Легкие сборы утром: завтрак готов, обед готов. Удобная комфортная жизнь.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="blog" id="blog">
-                    <div class="container">
-                        <div class="blog__title" data-aos="fade-left">
-                            Блог
-                        </div>
-                        <div class="blog__inner">
-                            <div class="blog__item" id="myEl2">
-                                <div class="blog__item-wrapper">
-                                    <div class="blog__item-img">
-                                        <img data-lazy="images/blog/blog-11.jpg" alt="">
-                                    </div>
-                                    <div class="blog__item-content">
-                                        <div class="blog__item-title">
-                                            Паста со спаржей, зелёным горошком и черемшой
-                                        </div>
-                                        <p class="blog__item-text">
-                                            Главный символ весны - спаржа. Белая, фиолетовая, зеленая - последнюю и
-                                            приготовим сегодня. Именно спаржа сейчас главенствует на лучших кухнях по
-                                            всему миру, начало её сезона ждут все шефы без исключения. Символ чего-то
-                                            изысканного и утонченного, признак высокого вкуса, легкость и красота.
-                                            Упустить сезон спаржи - настоящее преступление, в конце концов, когда еще её
-                                            приготовить, если не сейчас, в самый пик сезона. Тем более что готовить её
-                                            очень просто.....
-
-                                        </p>
-                                        <a class="blog__item-btn" href="http://www.foodandfood.ru/blog/comment/151/">
-                                            Читать дальше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog__item" id="myEl">
-                                <div class="blog__item-wrapper">
-                                    <div class="blog__item-img">
-                                        <img data-lazy="images/blog/blog-12.jpg" alt="">
-                                    </div>
-                                    <div class="blog__item-content">
-                                        <div class="blog__item-title">
-                                            Тыквенные оладьи с чили и имбирем без рецепта
-                                        </div>
-                                        <p class="blog__item-text">
-                                            Тыквенные оладьи с чили и имбирем очень универсальны. Они будут хороши и на
-                                            завтрак, и на обед и на ужин. Больше всего их любят есть просто так, без
-                                            всего - но обязательно поливают их оливковым маслом и обильно сбрызгиваю
-                                            лимонным соком уже в тарелке. Попробуйте их с лимонным соком (или
-                                            соком лайма), как же это вкусно! По старинке конечно можно подать к ним и
-                                            сметану, как к драникам, или жирный йогурт.....
-                                        </p>
-                                        <a class="blog__item-btn" href="http://www.foodandfood.ru/blog/comment/151/">
-                                            Читать дальше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog__item" id="myEl3">
-                                <div class="blog__item-wrapper">
-                                    <div class="blog__item-img">
-                                        <img data-lazy="images/blog/blog-13.jpg" alt="">
-                                    </div>
-                                    <div class="blog__item-content">
-                                        <div class="blog__item-title">
-                                            Простой сливовый пирог
-                                        </div>
-                                        <p class="blog__item-text">
-                                            Иногда, чем проще, тем лучше. Этот рецепт останется с вами надолго. Проще
-                                            представить себе сложно, а результат на 100 баллов. Рецепт настолько
-                                            элементарный, что его вполне можно доверить и ребенку. Тесто получается
-                                            очень нежное, пока он теплый нарезать его аккуратно не получится, проще есть
-                                            прямо ложкой из формы. В таком случае не лишним будет подать к нему
-                                            мороженое или сливки. Но лучше дождаться когда он полностью остынет. Корочка
-                                            получается красивая, золотая и хрустящая....
-                                        </p>
-                                        <a class="blog__item-btn" href="http://www.foodandfood.ru/blog/comment/144/">
-                                            Читать дальше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="contact" id="contacts">
-                    <div class="container">
-                        <div class="contact__wrapper">
-                            <div class="contact__title" data-aos="fade-left">
-                                Контакты
-                            </div>
-                            <div class="contact__inner">
-                                <div class="contact__map">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.1273214382397!2d30.49324659710425!3d50.45024036058179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0c59dbb693%3A0xabfdc23ed48d71cb!2sCoffeeology!5e0!3m2!1sru!2sua!4v1589308620199!5m2!1sru!2sua"
-                                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                                        tabindex="0">
-                                    </iframe>
-                                </div>
-                                <div class="contact__form">
-                                    <div class="contact__form-title">
-                                        Напиши нам
-                                    </div>
-                                    <form>
-                                        <div class="contact__form-row">
-                                            <input type="text" placeholder="Имя*" required>
-                                            <input type="email" placeholder="E-mail*" required>
-                                        </div>
-                                        <textarea placeholder="Написать сообщение..." name="" id="" cols="30" rows="10"
-                                            required></textarea>
-                                        <button type="submit">
-                                            Отправить
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="contact__info">
-                                <div class="contact__info-item contact__info-item__contact">
-                                    <div class="contact__info-item__wrap">
-                                        <div class="contact__info-title lnr-phone-handset">
-                                            Наш телефон:
-                                        </div>
-                                        <a class="contact__info-phone" href="tel:0577520330">(057) 752-03-30</a>
-                                        <a class="contact__info-phone" href="tel:0983373939">(098) 337-39-39</a>
-                                        <a class="contact__info-phone" href="tel:0994493939">(099) 449-39-39</a>
-                                        <a class="contact__info-phone" href="tel:0938313939">(093) 831-39-39</a>
-                                    </div>
-                                    <div class="contact__info-item__wrap">
-                                        <div class="contact__info-title lnr-envelope">
-                                            E-mail
-                                        </div>
-                                        <a class="contact__info-email" href="mailto:info@foxtar.com">info@foxtar.com</a>
-                                    </div>
-                                </div>
-                                <div class="contact__info-item">
-                                    <div class="contact__info-title lnr-map-marker">
-                                        Доставка
-                                    </div>
-                                    <p class="contact__info-content">
-                                        В день доставки с Вами предварительно связывается менеджер для уточнения
-                                        удобного для Вас диапазона времени доставки.
-                                        Оплата осуществляется наличными курьеру, при первой доставке.
-                                    </p>
-                                    <p class="contact__info-content">
-                                        Для вашего удобства мы можем скорректировать день и время доставки.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -981,24 +680,6 @@
         </footer>
     </div>
 
-    <div id="modal2">
-        <div class="login__wrapper">
-            <div class="login__title">
-                Войти
-            </div>
-            <form>
-                <label class="login__label-mail">
-                    <input type="email" placeholder="E-mail:" required>
-                </label>
-                <label class="login__label-pas">
-                    <input type="password" placeholder="Пароль" required>
-                </label>
-                <a class="login__creat-get" href="#"> Войти</a>
-                <a class="login__lost" href="#">Забыли пароль?</a>
-            </form>
-        </div>
-    </div>
-
 
     <div id="modal">
         <div class="login__wrapper">
@@ -1019,6 +700,8 @@
                     <input type="password" placeholder="Пароль" required>
                 </label>
                 <button type="submit">Создать акаунт</button>
+                <!-- <a class="login__creat" href="#">Создать новый акаунт</a>
+                <a class="login__lost" href="#">Забыли пароль?</a> -->
             </form>
         </div>
     </div>
